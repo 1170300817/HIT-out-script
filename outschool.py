@@ -22,10 +22,10 @@ for i in range(22, 29):
     browser.find_element_by_xpath('/html/body/div[1]/div[2]/button[1]').click()
     time.sleep(1)
     browser.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/form/p[1]/input").send_keys(
-        "*******")
+        "*******")  # 账号
     time.sleep(1)
     browser.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/form/p[2]/input[1]").send_keys(
-        "*******")
+        "*******")  # 密码
     time.sleep(1)
     browser.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/form/p[5]/button").click()
 
