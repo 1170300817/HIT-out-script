@@ -1,7 +1,8 @@
 # -*- encoding: utf-8 -*-
-import time
 import os
 import random
+import time
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -10,7 +11,7 @@ chrome_options = Options()
 resaons = ["吃饭", "看牙齿", "拍证件照", "探访亲友", "购买生活必需品", "买夏天衣服", "找对象", "办电话卡注销", "上家教", "学托福"]
 # 模拟浏览器打开网站
 # browser = webdriver.Chrome(executable_path='/usr/lib/chromium-browser/chromedriver')
-for i in range(26, 29):
+for i in range(22, 29):
     date_string = "2021年3月" + str(i) + "日"
     browser = webdriver.Chrome(options=chrome_options,
                                executable_path=r"C:\Users\Administrator\AppData\Local\Google\Chrome\Application\chromedriver.exe")
@@ -43,7 +44,6 @@ for i in range(26, 29):
     browser.execute_script(js)
     time.sleep(1)
     browser.find_element_by_xpath("/html/body/div[1]/div/div[12]/div[2]/input").send_keys(date_string)  # 填写日期
-    # characters = random.sample(alphabet, 10)
     reason = random.sample(resaons, 1)
     browser.find_element_by_xpath("/html/body/div[1]/div/div[15]/textarea").send_keys(reason[0])  # 出校理由
     print(reason)
