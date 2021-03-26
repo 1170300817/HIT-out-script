@@ -53,6 +53,7 @@ for i in range(22, 29):
     browser.find_element_by_xpath("/html/body/div[3]/div[4]/input").click()
     browser.find_element_by_xpath("/html/body/div[3]/div[5]/input").click()
     browser.find_element_by_xpath("/html/body/div[3]/div[6]/input").click()
+    browser.find_element_by_xpath("/html/body/div[3]/div[7]/input").click()
     browser.find_element_by_xpath("/html/body/div[3]/div[8]/input").click()
     browser.find_element_by_xpath("/html/body/div[3]/div[9]/input").click()
     browser.find_element_by_xpath("/html/body/div[6]").click()  # 提交
